@@ -16,6 +16,9 @@ Tablet  540px - 959px (čti jako 540px a víc)
 PC      960px a víc
 */
 
+body{
+	margin: 0;
+}
 h1
 {
 	text-align: center;
@@ -28,6 +31,7 @@ p{
 
 .karta{
 	border: 1px solid silver;
+	border-radius: 10px;
 	padding: 20px;
 	margin-bottom: 20px;
 	width: 50%; /*když chci něco zarovnat na střed, musím mu definovat velikost*/
@@ -41,5 +45,41 @@ img{
 	display: block; /*zarovnání obrázku na střed*/
 	margin: 0 auto; /*zarovnání obrázku na střed*/
 	
+}
+
+@media screen and (min-width: 540px){
+	.kontakty{
+		display: flex; /*všechny karty na jednom řádku*/
+		flex-wrap: wrap; /*na jednom řádku 2 karty*/
+		justify-content: space-between; /*udělá mezeru mezi boxy*/
+	}
+
+	.karta{
+		flex: 0 0 calc((100% - 40px) / 2); /*na jednom řádku 2 karty s volným místem k rozdělení 40 px*/
+		display: flex;
+	}
+
+	h2,
+	p{
+		text-align: left;
+		padding-left: 10px;
+	}
+
+	img{
+		max-width: 200px;
+	}
+	
+
+}
+@media screen and (min-width: 960px){
+	.karta{
+		display: block;
+		flex: 0 0 calc((100% - 80px) / 4);
+	}
+
+	h2,
+	p{
+	text-align: center;
+}
 
 }
