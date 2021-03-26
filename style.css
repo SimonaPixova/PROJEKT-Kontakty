@@ -15,3 +15,31 @@ Mobil   0 - 539px
 Tablet  540px - 959px (čti jako 540px a víc)
 PC      960px a víc
 */
+
+h1
+{
+	text-align: center;
+}
+
+h2,
+p{
+	text-align: center;
+}
+
+.karta{
+	border: 1px solid silver;
+	padding: 20px;
+	margin-bottom: 20px;
+	width: 50%; /*když chci něco zarovnat na střed, musím mu definovat velikost*/
+	margin-left: auto; /*zarovnání kartiček na střed*/
+	margin-right: auto; /*zarovnání kartiček na střed*/
+}
+
+img{
+	border-radius: 50%;
+	max-width: 100%;
+	display: block; /*zarovnání obrázku na střed*/
+	margin: 0 auto; /*zarovnání obrázku na střed*/
+	
+
+}
