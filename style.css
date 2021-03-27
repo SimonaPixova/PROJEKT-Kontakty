@@ -73,7 +73,7 @@ img{
 }
 @media screen and (min-width: 960px){
 	.karta{
-		display: block;
+		display: block;/**/
 		flex: 0 0 calc((100% - 80px) / 4);
 	}
 
